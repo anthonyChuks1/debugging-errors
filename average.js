@@ -1,10 +1,8 @@
-function average(list) {
-    var sum = 0;
-  
-    for (var num of list) {
-      sum ++ num;
-    }
-  
-    return sum / list.length;
-  
-console.log(average([3, 5, 7]));
+const average = function(list) {
+  let sum = 0;
+  for (let num of list) {
+    sum += num;
+  }
+  return sum / list.length;
+};
+console.log(average([3, 5, 6, 7, 8]));
